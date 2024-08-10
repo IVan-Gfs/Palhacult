@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ 
+
+ h1 {
+    width: 400px;
+    font-size: 25px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+ }
+
+ #inicio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ #beventos{
+    margin: 30px 30px 30px 30px;
+    border-radius: 4px;
+    width: 250px;
+    height: 45px;
+    text-align: center;
+ }
+
+ #carrossel{
+    display: flex;
+    justify-content: center;
+ }
+
+ #quadrado{
+    width: 75%;
+    height: 450px;
+    background-color: black;
+ }
+
+ #artigos {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    justify-content: space-around
+ }
+
+
+
+ #conteudo {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    
+ }
+
