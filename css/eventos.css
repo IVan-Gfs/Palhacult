@@ -1,0 +1,69 @@
+
+/* Pesquisa */
+#search{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #C4CADA;
+    width: 40vw;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 2px;
+}
+
+#search form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 35vw;
+    justify-content: space-around;
+}
+h1{
+    margin: 5px 0px 10px 5px;
+}
+.nome{
+    width: 100%;
+
+}
+
+.nome input{
+    margin-top: 10px;
+    width: 100%;
+    height: 25px;
+    border: 2px solid #A0A0AB;
+    border-radius: 2px;
+   
+    
+}
+
+select{
+    margin-top: 5px;
+    width: 150px;
+    height: 25px;
+    border: 2px solid #A0A0AB;
+    border-radius: 2px;
+}
+
+.data input{
+    margin-top: 5px;
+    height: 25px;
+    width: 150px;
+    border: 2px solid #A0A0AB;
+    border-radius: 2px;
+}
+
+/* Eventos */
+
+#eventos{
+    margin: auto;
+    
+    margin-top: 50px;
+    gap: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+}
+
+article{
+    background-color: #C4CADA;
+    height: 250px;
+}
