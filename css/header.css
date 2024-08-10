@@ -8,7 +8,7 @@
     width: 100%;
 }
 
-nav{
+#menu{
     background-color: #22222E;
     color: #B1BCCE;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -16,7 +16,7 @@ nav{
     font-size: 1.2em;
 
 }
-nav ul li a{
+#menu ul li a{
     
     text-decoration: none;
     color: #B1BCCE;

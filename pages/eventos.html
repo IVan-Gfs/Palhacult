@@ -4,12 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/eventos.css ">
     <title>Eventos</title>
 </head>
 <body>
     <header>
         <img id="capa" src="../images/Header.png" alt="Fundo">
-        <nav>
+        <nav id="menu">
             
             <img id="logo" src="../images/Logo.png" alt="logo">
             <p>A agenda cultural da região de araçatuba</p> 
@@ -21,6 +22,61 @@
                     <li><img src="../images/Frame.png" alt="perfil"></li>
                 </ul>
         </nav>
-    </header>  
+    </header>
+
+    <main>
+
+        <div id="search">
+            <h1>Procure por um evento</h1>
+            <form action="" method="get">
+                <label for="nome" class="nome">Nome do evento <br>
+                    <input type="text" name="nome">   
+                </label>
+                
+
+                
+                <label for="cat">Categoria <br>
+                    <select name="categoria" id="cat">
+                        <option value="teatro">Teatro</option>
+                        <option value="jogos e esporte">Jogos e Esportes</option>
+                        <option value="musica">Música</option>
+                    </select>
+                </label>
+
+                <label for="loc">Localização <br>
+                    <select name="loc" id="loc">
+                        <option value="araraquara">Araçatuba</option>
+                        <option value="aracatuba">Araraquara</option>
+                        <option value="birigui">Birigui</option>
+                        <option value="buritama">Buritama</option>
+                        <option value="coroados">Coroados</option>
+                        <option value="clementina">Clementina</option>
+                    </select>
+                </label>
+
+                <label for="data" class="data">Data <br>
+                    <input type="date" name="data"> 
+                </label>
+                
+            </form>
+            
+        </div>
+
+        <div id="eventos">
+            <article>
+                <img src="../images/Rectangle 11.png" alt="">
+            </article>
+            <article>
+                <img src="../images/Rectangle 11 (2).png" alt="">
+            </article>
+            <article>
+                <img src="../images/Rectangle 11 (3).png" alt="">
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        
+    </footer>
 </body>
 </html>
