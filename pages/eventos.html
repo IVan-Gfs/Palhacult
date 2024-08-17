@@ -1,85 +1,171 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/eventos.css ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/eventos.css " />
     <title>Eventos</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img id="capa" src="../images/Header.png" alt="Fundo">
-        <nav id="menu"> 
-            
-            <div class="item">
-                <img id="logo" src="../images/Logo.png" alt="logo">
-                <p id="legend">A agenda cultural da região de araçatuba</p>
-            </div>
-             
-             <ul>
-                <li><a href="">Artigos</a></li>
-                <li><a href="">Notícias</a></li>
-                <li><a href="">Contato</a></li>
-                <li><a href="">Adcionar evento</a></li>
-                <li><img src="../images/Frame.png" alt="perfil"></li>
-            </ul>
-        </nav>
+      <img id="capa" src="../images/Header.png" alt="Fundo" />
+      <nav id="menu">
+        <div class="item">
+          <img id="logo" src="../images/Logo.png" alt="logo" />
+          <p id="legend">A agenda cultural da região de araçatuba</p>
+        </div>
+
+        <ul>
+          <li><a href="">Artigos</a></li>
+          <li><a href="">Notícias</a></li>
+          <li><a href="">Contato</a></li>
+          <li><a href="">Adcionar evento</a></li>
+          <li><img src="../images/Frame.png" alt="perfil" /></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
+      <div id="search">
+        <h1>Procure por um evento</h1>
+        <form action="" method="get">
+          <label for="nome" class="nome"
+            >Nome do evento <br />
+            <input type="text" name="nome" />
+          </label>
 
-        <div id="search">
-            <h1>Procure por um evento</h1>
-            <form action="" method="get">
-                <label for="nome" class="nome">Nome do evento <br>
-                    <input type="text" name="nome">   
-                </label>
-                
+          <label for="cat"
+            >Categoria <br />
+            <select name="categoria" id="cat">
+              <option value="teatro">Teatro</option>
+              <option value="jogos e esporte">Jogos e Esportes</option>
+              <option value="musica">Música</option>
+            </select>
+          </label>
 
-                
-                <label for="cat">Categoria <br>
-                    <select name="categoria" id="cat">
-                        <option value="teatro">Teatro</option>
-                        <option value="jogos e esporte">Jogos e Esportes</option>
-                        <option value="musica">Música</option>
-                    </select>
-                </label>
+          <label for="loc"
+            >Localização <br />
+            <select name="loc" id="loc">
+              <option value="araraquara">Araçatuba</option>
+              <option value="aracatuba">Araraquara</option>
+              <option value="birigui">Birigui</option>
+              <option value="buritama">Buritama</option>
+              <option value="coroados">Coroados</option>
+              <option value="clementina">Clementina</option>
+            </select>
+          </label>
 
-                <label for="loc">Localização <br>
-                    <select name="loc" id="loc">
-                        <option value="araraquara">Araçatuba</option>
-                        <option value="aracatuba">Araraquara</option>
-                        <option value="birigui">Birigui</option>
-                        <option value="buritama">Buritama</option>
-                        <option value="coroados">Coroados</option>
-                        <option value="clementina">Clementina</option>
-                    </select>
-                </label>
+          <label for="data" class="data"
+            >Data <br />
+            <input type="date" name="data" />
+          </label>
+        </form>
+      </div>
 
-                <label for="data" class="data">Data <br>
-                    <input type="date" name="data"> 
-                </label>
-                
-            </form>
-            
-        </div>
-
-        <div id="eventos">
-            <article>
-                <img src="../images/Rectangle 11.png" alt="">
-            </article>
-            <article>
-                <img src="../images/Rectangle 11 (2).png" alt="">
-            </article>
-            <article>
-                <img src="../images/Rectangle 11 (3).png" alt="">
-            </article>
-        </div>
+      <div id="eventos">
+        <article>
+          <img src="../images/Rectangle 11.png" alt="" />
+          <div class="titulo">Mamonas Assassinas: O filme</div>
+          <div class="localizacao">
+            <h3 class="cidade">Birigui</h3>
+            <div class="circle"></div>
+            <h3 class="lugal">Sesc</h3>
+          </div>
+          <div class="infoBottom">
+            <div class="about">
+              <p class="data">30/07/2024 - 19:30h</p>
+              <p class="categoria">Cinema e vídeo</p>
+            </div>
+            <a href="./detalhes.html" class="detalhes">DETALHES</a>
+          </div>
+        </article>
+        <article>
+            <img src="../images/Rectangle 11 (3).png" alt="" />
+            <div class="titulo">Mamonas Assassinas: O filme</div>
+            <div class="localizacao">
+              <h3 class="cidade">Birigui</h3>
+              <div class="circle"></div>
+              <h3 class="lugal">Sesc</h3>
+            </div>
+            <div class="infoBottom">
+              <div class="about">
+                <p class="data">30/07/2024 - 19:30h</p>
+                <p class="categoria">Cinema e vídeo</p>
+              </div>
+              <a href="./detalhes.html" class="detalhes">DETALHES</a>
+            </div>
+          </article>
+          <article>
+            <img src="../images/Rectangle 11 (2).png" alt="" />
+            <div class="titulo">Mamonas Assassinas: O filme</div>
+            <div class="localizacao">
+              <h3 class="cidade">Birigui</h3>
+              <div class="circle"></div>
+              <h3 class="lugal">Sesc</h3>
+            </div>
+            <div class="infoBottom">
+              <div class="about">
+                <p class="data">30/07/2024 - 19:30h</p>
+                <p class="categoria">Cinema e vídeo</p>
+              </div>
+              <a href="./detalhes.html" class="detalhes">DETALHES</a>
+            </div>
+          </article>
+          <article>
+            <img src="../images/Rectangle 11 (3).png" alt="" />
+            <div class="titulo">Mamonas Assassinas: O filme</div>
+            <div class="localizacao">
+              <h3 class="cidade">Birigui</h3>
+              <div class="circle"></div>
+              <h3 class="lugal">Sesc</h3>
+            </div>
+            <div class="infoBottom">
+              <div class="about">
+                <p class="data">30/07/2024 - 19:30h</p>
+                <p class="categoria">Cinema e vídeo</p>
+              </div>
+              <a href="./detalhes.html" class="detalhes">DETALHES</a>
+            </div>
+          </article>
+          <article>
+            <img src="../images/Rectangle 11.png" alt="" />
+            <div class="titulo">Mamonas Assassinas: O filme</div>
+            <div class="localizacao">
+              <h3 class="cidade">Birigui</h3>
+              <div class="circle"></div>
+              <h3 class="lugal">Sesc</h3>
+            </div>
+            <div class="infoBottom">
+              <div class="about">
+                <p class="data">30/07/2024 - 19:30h</p>
+                <p class="categoria">Cinema e vídeo</p>
+              </div>
+              <a href="./detalhes.html" class="detalhes">DETALHES</a>
+            </div>
+          </article>
+          <article>
+            <img src="../images/Rectangle 11.png" alt="" />
+            <div class="titulo">Mamonas Assassinas: O filme</div>
+            <div class="localizacao">
+              <h3 class="cidade">Birigui</h3>
+              <div class="circle"></div>
+              <h3 class="lugal">Sesc</h3>
+            </div>
+            <div class="infoBottom">
+              <div class="about">
+                <p class="data">30/07/2024 - 19:30h</p>
+                <p class="categoria">Cinema e vídeo</p>
+              </div>
+              <a href="./detalhes.html" class="detalhes">DETALHES</a>
+            </div>
+          </article>
+          
+    
+        
+      </div>
     </main>
 
-    <footer>
-        
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
