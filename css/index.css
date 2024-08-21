@@ -46,13 +46,13 @@ h1 {
 #escrita {
    display: flex;
    flex-direction: column;
-   gap: 16px; 
+   padding-bottom: 20px; 
 }
 
 #escrita .item {
    display: flex;
    align-items: flex-start; 
-   gap: 8px; 
+   padding-bottom: 20px; 
 }
 
 #escrita img {
