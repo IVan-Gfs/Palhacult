@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E0ECF8;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+}
+main{
+    padding: 5%;
+}
+#catLoc{
+    display: flex;
+    gap: 15px;
+    margin: auto;
+    width: 50vw;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: black;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#cat{
+    color: #6B4E82;
+    
+}
+#container{
+    margin: auto;
+    display: flex;
+    width: 50vw;
+    height: 45vw;
+    gap: 20px;
+}
+
+/* Lado Esquerdo dos detalhes(Nome, data, horário, endereço, etc.) */
+#left, #right{
+    background-color: #ffffff;
+    
+}
+#left{
+    width: 30%;
+    border-radius: 8px 0px 0px 8px;
+    padding: 10px;
+}
+
+#left #detalhes{
+    padding: 10px;
+}
+
+#icons{
+    padding: 10px 0px 0px 0px;
+}
+#compartilhar{
+ padding: 15px 0px 0px 0px;
+}
+
+.divRow{
+    background-color: rgb(24, 23, 23);
+    height: 1px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#duracao{
+    margin-bottom: 20px;
+}
+#modalidade{
+    display: flex;
+    justify-content: left;
+   
+    gap: 15px;
+}
+.circle{
+    background-color: black;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    align-self: center;
+
+}
+#local{
+    margin: 10px 0px 10px 0px
+}
+
+#data{
+    font-size: 1.4em;
+    ;
+}
+#hora{
+    font-size: 1.2em;
+}
+#seta{
+    position: relative;
+    top: 10em;
+}
+/* Lado Direto dos detalhes(Imagem e descrição) */
+#right{
+    width: 60%;
+    border-radius: 0px 8px 0px 8px;
+}
+
+#descricao{
+    padding: 25px;
+   
+}
+

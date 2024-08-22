@@ -43,7 +43,9 @@ ul {
 #legend {
   border-left: 4px solid black;
   padding: 5px;
-  height: 50%;
+  margin-top: 5px;
+  height: 100%;
+  
 }
 #logo {
   width: 250px;
