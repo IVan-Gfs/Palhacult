@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body {
+    background-color: #E0ECF8DA;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#body h1 {
+    padding-top: 120px;
+    font-family: 'Jost';font-size: 30px;
+}
+
+#area{
+    background-color: #D8E5F1;
+    width: 70%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#titulo{
+    padding-top: 60px;
+    font-size: 25px;
+}
+
+#ctitulo{
+    background-color: #E8F2FC;
+    border-color: #c2c2c2da;
+    width: 630px;
+    height: 35px;
+    font-size: 17px;
+}
+
+#categoria{
+    padding-top: 60px;
+    font-size: 25px;
+}
+
+#scategoria{
+    background-color: #E8F2FC;
+    border-color: #c2c2c2da;
+    width: 315px;
+    height: 35px;
+    font-size: 17px;
+}
