@@ -84,7 +84,7 @@
         $dataFim = $row['dataFim'] ? new DateTime($row['dataInicio']) : null;
         $dataI = $dataInicio->format('d/m/y');
         $dataF = $dataFim ? $dataFim->format('d/m/y') : '';
-        echo $row['idEvento'];
+       
            echo   '<article>
                        <a href="./detalhes.html"><img src="'.$row["imgEvento"].'" alt="" /></a>
 
