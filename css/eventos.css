@@ -3,12 +3,13 @@
 
 body{
     background-color: #E0ECF8;
+    font-family: "Jost", sans-serif;
 }
 a{
     text-decoration: none;
 }
 #search{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
     background-color: #C4CADA;
     width: 40vw;
     margin: auto;
@@ -76,6 +77,12 @@ select{
     width: 150px;
     border: 2px solid #A0A0AB;
     border-radius: 2px;
+}
+
+#message{
+    text-align: center;
+    margin-top: 100px;
+    display: none;
 }
 
 /* Eventos */

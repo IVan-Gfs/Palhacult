@@ -12,6 +12,7 @@ body{
 main{
     padding: 5%;
 }
+
 #catLoc{
     display: flex;
     gap: 15px;

@@ -1,8 +1,12 @@
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/eventos.css">
     <title>Eventos</title>
@@ -31,25 +35,27 @@
     <main>
         <div id="search">
             <h1>Procure por um evento</h1>
-            <form action="" method="get">
+            <form action="./eventos.php" method="get">
                 <label for="nome" class="nome">Nome do evento <br />
-                    <input type="text" name="nome" />
+                    <input type="text" name="nome" id="nome"/>
                     <button type="submit" class="search-btn">
                         <img src="../images/lupa.png" alt="lupa-pesquisa" style="width: 20px;">
                     </button>
-
+                    
                 </label>
 
                 <label for="cat">Categoria <br />
                     <select name="categoria" id="cat">
+                        <option value="">Selecione</option>
                         <option value="teatro">Teatro</option>
                         <option value="jogos e esporte">Jogos e Esportes</option>
                         <option value="musica">Música</option>
                     </select>
                 </label>
 
-                <label for="loc">Localização <br />
+                <label for="loc">Município <br />
                     <select name="loc" id="loc">
+                        <option value="">Selecione</option>
                         <option value="araraquara">Araçatuba</option>
                         <option value="aracatuba">Araraquara</option>
                         <option value="birigui">Birigui</option>
@@ -60,12 +66,12 @@
                 </label>
 
                 <label for="data" class="data">Data <br />
-                    <input type="date" name="data" />
+                    <input type="date" name="data" id="data"/>
                 </label>
             </form>
         </div>
-
-        <div id="eventos">
+    <h1 id="message" >Nenhum evento foi encontrado ;-;</h1>
+    <div id="eventos">
 
         <?php
    
@@ -82,10 +88,10 @@
 
         $dataInicio = new DateTime($row['dataInicio']);
         $dataFim = $row['dataFim'] ? new DateTime($row['dataInicio']) : null;
+        $dataIBusca = $dataInicio->format('Y-m-d');
         $dataI = $dataInicio->format('d/m/y');
         $dataF = $dataFim ? $dataFim->format('d/m/y') : '';
-        echo $row['idEvento'];
-           echo   '<article>
+           echo   '<article class="evento" data-nome="'.$row['nome'].'" data-categoria="'.$row['categoria'].'" data-dateInicio="'.$dataIBusca.'" data-loc="'.$row['cidade'].'" data-dateFim="'.$row['dataFim'].'">
                        <a href="./detalhes.html"><img src="'.$row["imgEvento"].'" alt="" /></a>
 
                        <a href="./detalhes.html">
@@ -117,6 +123,8 @@
 
 
     <footer></footer>
+
+    <script src="./filtrarEventos.js"></script>
 </body>
 
 </html>
