@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/adicionarevento.css">
 </head>
-<header><a href="./index.html"><img id="capa" src="../images/Header.png" alt="Fundo"></a>
+<header>
+    <a href="./index.html"><img id="capa" src="../images/Header.png" alt="Fundo"></a>
     <nav id="menu"> 
         <div class="item">
             <img id="logo" src="../images/Logo.png" alt="logo">
@@ -25,22 +26,88 @@
 </header>
 <body id="body">
     <h1>Preencha o formulário do evento</h1>
- <div id="area">  
-    <div id="caixa">
-       <div id="titulo">
-        <label for="titulo">Titulo do evento:</label><br>
-        <input type="text" name="titulo" id="ctitulo">
+    <div id="area">  
+        <div id="caixa">
+            <div id="titulo">
+                <label for="titulo">Titulo do evento:</label><br>
+                <input type="text" name="titulo" id="ctitulo">
+            </div>
+
+            <div id="categoria-duracao">
+                <div id="categoria">
+                    <label for="categoria">Categoria</label><br>
+                    <select name="categoria" id="scategoria">
+                        <option value="Festival">Festival</option>
+                        <option value="Comemoracao">Comemoração</option>
+                        <option value="Beneficente">Beneficente</option>
+                    </select>
+                </div>
+
+                <div id="duracao">
+                    <label for="duracao">Duração:</label><br>
+                    <input type="text" name="duracao" id="cduracao">
+                </div>
+            </div>
+
+            <div id="etaria-municipio">
+                 <div id="etaria">
+                     <label for="etaria">Faixa Etária</label><br>
+                     <select name="etaria" id="setaria">
+                        <option value="Livre">Livre</option>
+                        <option value="12+">12+</option>
+                        <option value="16+">16+</option>
+                        <option value="18+">18+</option>
+                     </select>
+                 </div>
+
+                 <div id="municipio">
+                    <label for="municipio">Município:</label><br>
+                    <input type="text" name="municipio" id="cmunicipio">
+                 </div>
+            </div>
+
+            <div id="endereco">
+                <label for="endereco">Endereço:</label><br>
+                <input type="text" name="endereco" id="cendereco">
+            </div>
+
+            <div id="modalidade-tipo">
+                <div id="modalidade">
+                    <label for="modalidade">Modalidade</label><br>
+                    <select name="modalidade" id="smodalidade">
+                       <option value="comum">Publicação comum</option>
+                       <option value="destacado">Publicação com destaque</option>
+                    </select>
+                </div>
+
+                <div id="tipo">
+                    <label for="tipo">Tipo de evento</label><br>
+                    <select name="tipo" id="stipo">
+                        <option value="gratuito">Entrada gratuíta</option>
+                        <option value="beneficente">Entrada mediante doação</option>
+                        <option value="pago">Entrada paga</option>
+                    </select>
+                </div>
+           </div>
+            
+           <div id="data-horario">
+            <div id="data">
+                <label for="data">Data</label><br>
+                <input type="date" name="data" id="cdata">
+            </div>
+
+            <div id="horario">
+                <label for="horario">Horário</label><br>
+                <input type="time" name="horario" id="chorario">
+            </div>
        </div>
-       
-       <div id="categoria">
-        <label for="categoria">Categoria</label><br>
-        <select name="categoria" id="scategoria">
-         <option value="Festival">Festival</option>
-         <option value="Comemoracao">Comemoração</option>
-         <option value="Beneficente">Beneficente</option>
-        </select>
-       </div>
+
+
+
+
+
+
+        </div>
     </div>
- </div>
 </body>
 </html>
