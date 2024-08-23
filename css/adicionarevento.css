@@ -20,7 +20,7 @@
 #area {
     background-color: #D8E5F1;
     width: 70%;
-    height: 1000px;
+    height: 1650px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -171,4 +171,36 @@
     width: 300px;
     height: 35px;
     font-size: 17px;
+}
+
+#texto {
+    padding-top: 100px;
+    font-size: 25px;
+}
+
+#atext {
+    width: 630px;
+    height: 450px;
+    background-color: #E8F2FC;
+    border-color: #c2c2c2da;
+    font-size: 17px;
+}
+
+#img {
+    padding-top: 60px;
+    font-size: 25px;
+}
+
+#adicionar {
+    display: flex;
+    padding-top: 30px;
+    padding-left: 500px;
+    align-items: flex-end;
+}
+
+#badicionar {
+    width: 170px;
+    height: 50px;
+    background-color: #C8EF74;
+    border-radius: 7px;
 }
