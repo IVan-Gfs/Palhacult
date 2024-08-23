@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E0ECF8DA;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#capa {
+    width: 100%;
+}
+
+#logo {
+    height: 50px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu .item {
+    display: flex;
+    align-items: center;
+}
+
+#legend {
+    margin-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+}
+
+ul li img {
+    height: 30px;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Estilos do formulário */
+#formulario-evento {
+    background-color: #D8E5F1;
+    padding: 90px;
+    max-width: 45%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 48%;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #c2c2c2da;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="file"] {
+    border: none;
+}
+
+.file-upload-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #c2c2c2da;
+    border-radius: 4px;
+    background-color: #E8F2FC;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.file-upload-wrapper input[type="file"] {
+    display: none;
+}
+
+.file-upload-wrapper label {
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+}
+
+.file-upload-wrapper:hover {
+    background-color: #D0E5F3;
+}
+
+button {
+    background-color: #C8EF74;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a0d75b;
+}

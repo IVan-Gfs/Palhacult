@@ -18,7 +18,7 @@
         <img id="capa" src="../images/Header.png" alt="Fundo" />
         <nav id="menu">
             <div class="item">
-                <img id="logo" src="../images/Logo.png" alt="logo" />
+                <a href="../index.html"><img id="logo" src="../images/Logo.png" alt="logo"></a>
                 <p id="legend">A agenda cultural da região de Araçatuba</p>
             </div>
 
@@ -26,7 +26,7 @@
                 <li><a href="">Artigos</a></li>
                 <li><a href="">Notícias</a></li>
                 <li><a href="">Contato</a></li>
-                <li><a href="">Adcionar evento</a></li>
+                <li><a href="../pages/addEvento.php">Adcionar evento</a></li>
                 <li><img src="../images/Frame.png" alt="perfil" /></li>
             </ul>
         </nav>
