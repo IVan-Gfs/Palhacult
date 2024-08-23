@@ -8,11 +8,13 @@
     background-color: #E0ECF8DA;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
 }
 
 #body h1 {
     padding-top: 120px;
+    padding-left: 285px;
     font-family: 'Jost';
     font-size: 30px;
 }
@@ -25,6 +27,7 @@
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    align-self: center;
 }
 
 #titulo {
