@@ -18,7 +18,7 @@
         <nav id="menu">
 
             <div class="item">
-                <img id="logo" src="../images/Logo.png" alt="logo">
+                <a href="../index.html"><img id="logo" src="../images/Logo.png" alt="logo"></a>
                 <p id="legend">A agenda cultural da região de Araçatuba</p>
             </div>
 
@@ -26,7 +26,7 @@
                 <li><a href="">Artigos</a></li>
                 <li><a href="">Notícias</a></li>
                 <li><a href="">Contato</a></li>
-                <li><a href="">Adcionar evento</a></li>
+                <li><a href="../pages/addEvento.php">Adcionar evento</a></li>
                 <li><img src="../images/Frame.png" alt="perfil"></li>
             </ul>
         </nav>
@@ -85,13 +85,13 @@
                                 <div class="divRow"></div>
                                 <p id="data">'. substr($dataI, 0, -3).' e '.substr($dataF, 0, -3).'</p>
                                 <p id="hora">Sexta-feira e sábado, às '.substr($row["horario"], 0, -3) .'</p>
-                                <a href="./eventos.html"><img src="../images/backSeta.png" alt="voltar" id="seta"></a>
+                                <a href="./eventos.php"><img src="../images/backSeta.png" alt="voltar" id="seta"></a>
                                 
                             </div>
 
                         </div>
                         <div id="right">
-                            <img src="../images/CapaEvento2.png" alt="Imagem" width="100%">
+                            <img src="../uploads/'.$row['imgEvento'].'" alt="Imagem" width="100%">
                             <p id="descricao">
                              '.$row['descricao'].'
                             </p>

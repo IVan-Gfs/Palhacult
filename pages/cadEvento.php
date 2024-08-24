@@ -11,14 +11,14 @@ $endereco = $_POST['endereco'];
 $modalidade = $_POST['modalidade'];
 $tipoEvento = $_POST['tipo'];
 $dataInicio = $_POST['data'];
-$dataFim = $_POST['dataFim'];
+// $dataFim = $_POST['dataFim'];
 $horario = $_POST['horario'];
-$localEvento = $_POST['localEvento'];
+// $localEvento = $_POST['localEvento'];
 $descricao = $_POST['text'];
 
 // Verificar se o arquivo foi carregado e definir o caminho da imagem
 if (isset($_FILES['Imagem']) && $_FILES['Imagem']['error'] == UPLOAD_ERR_OK) {
-    $imgEvento = 'uploads/' . basename($_FILES['Imagem']['name']);
+    $imgEvento = basename($_FILES['Imagem']['name']);
     move_uploaded_file($_FILES['Imagem']['tmp_name'], '../uploads/' . basename($_FILES['Imagem']['name']));
 } else {
     // Defina uma imagem padrão ou trate o erro conforme necessário
@@ -27,14 +27,16 @@ if (isset($_FILES['Imagem']) && $_FILES['Imagem']['error'] == UPLOAD_ERR_OK) {
 
 // Preparar e executar a consulta
 $stmt = $conn->prepare("INSERT INTO evento (nome, categoria, duracao, classificacao, endereco, cidade, modalidade, tipoEvento, dataInicio, dataFim, horario, localEvento, imgEvento, descricao) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("ssssssssssssss", $nome, $categoria, $duracao, $etaria, $municipio, $endereco, $modalidade, $tipoEvento, $dataInicio, $dataFim, $horario, $localEvento, $imgEvento, $descricao);
+$stmt->bind_param("ssssssssssssss", $nome, $categoria, $duracao, $etaria, $endereco, $municipio, $modalidade, $tipoEvento, $dataInicio, $dataFim, $horario, $localEvento, $imgEvento, $descricao);
 
 if ($stmt->execute()) {
     // Redirecionar para a página de confirmação
-    header("Location: confirmacao.php");
+    header("Location: confirmPage.php");
     exit();
 } else {
     echo "Erro ao adicionar o evento: " . $conn->error;
+    echo "teste";
+    echo $etaria;
 }
 
 $stmt->close();

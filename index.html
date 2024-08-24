@@ -23,7 +23,7 @@
             <li><a href="">Artigos</a></li>
             <li><a href="">Notícias</a></li>
             <li><a href="">Contato</a></li>
-            <li><a href="./pages/adicionarevento.html">Adicionar evento</a></li>
+            <li><a href="./pages/addEvento.php">Adicionar evento</a></li>
             <li><img src="./images/Frame.png" alt="perfil"></li>
         </ul>
     </nav>
@@ -31,11 +31,18 @@
 <body>
     <div id="inicio">
         <h1>Informe-se sobre os eventos culturais que acontecerão na região.</h1>
-        <a href="./pages/eventos.html"><button id="beventos">ENCONTRAR EVENTOS?</button></a>
+        <a href="./pages/eventos.php"><button id="beventos">ENCONTRAR EVENTOS?</button></a>
     </div>
 
     <div id="carrossel">
-        <div id="quadrado"></div>
+        <div id="quadrado">
+            <img src="./images/imgCarrossel.jpg" alt="" id="ImgCarrossel">
+            <div id="radioCarrossel">
+                <input type="radio" name="imgDestaque" id="1" >
+                <input type="radio" name="imgDestaque" id="2">
+                <input type="radio" name="imgDestaque" id="3">
+            </div>
+        </div>
     </div>
 
     <div id="artigos">

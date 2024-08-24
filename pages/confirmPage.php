@@ -13,7 +13,7 @@
     <div class="container">
         <h1>Cadastro realizado com sucesso!</h1>
         <p>O evento foi adicionado com sucesso ao sistema.</p>
-        <a href="eventos.html" class="voltar-btn">Voltar para a página de eventos</a>
+        <a href="eventos.php" class="voltar-btn">Voltar para a página de eventos</a>
     </div>
 </body>
 

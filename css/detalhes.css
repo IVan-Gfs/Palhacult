@@ -36,7 +36,7 @@ a{
     margin: auto;
     display: flex;
     width: 50vw;
-    height: 45vw;
+    height: 50vw;
     gap: 20px;
 }
 
@@ -99,14 +99,16 @@ a{
 }
 #seta{
     position: relative;
-    top: 10em;
+    top: 1em;
 }
 /* Lado Direto dos detalhes(Imagem e descrição) */
 #right{
     width: 60%;
     border-radius: 0px 8px 0px 8px;
 }
-
+#right img{
+ border-radius: 0px 8px 0px 0px;
+}
 #descricao{
     padding: 25px;
    

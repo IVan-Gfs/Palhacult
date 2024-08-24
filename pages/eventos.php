@@ -85,14 +85,14 @@
     
        // Exibir dados de cada linha
        while ($row = $result->fetch_assoc()) {
-
+       
         $dataInicio = new DateTime($row['dataInicio']);
         $dataFim = $row['dataFim'] ? new DateTime($row['dataInicio']) : null;
         $dataIBusca = $dataInicio->format('Y-m-d');
         $dataI = $dataInicio->format('d/m/y');
         $dataF = $dataFim ? $dataFim->format('d/m/y') : '';
            echo   '<article class="evento" data-nome="'.$row['nome'].'" data-categoria="'.$row['categoria'].'" data-dateInicio="'.$dataIBusca.'" data-loc="'.$row['cidade'].'" data-dateFim="'.$row['dataFim'].'">
-                       <a href="./detalhes.html"><img src="'.$row["imgEvento"].'" alt="" /></a>
+                       <a href="./detalhes.html"><img src=../uploads/'.$row["imgEvento"].' alt="" /></a>
 
                        <a href="./detalhes.html">
                            <div class="titulo">'.$row["nome"].'</div>

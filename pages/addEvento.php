@@ -26,7 +26,7 @@
                 <li><a href="">Artigos</a></li>
                 <li><a href="">Notícias</a></li>
                 <li><a href="">Contato</a></li>
-                <li><a href="../pages/adicionarevento.html">Adicionar evento</a></li>
+                <li><a href="../pages/addEvento.php">Adicionar evento</a></li>
                 <li><img src="../images/Frame.png" alt="perfil"></li>
             </ul>
         </nav>
@@ -34,7 +34,7 @@
 
     <main>
         <h1>Preencha o formulário do evento</h1>
-        <form action="../pages/addEvento.php" method="post" id="formulario-evento" enctype="multipart/form-data">
+        <form action="../pages/cadEvento.php" method="post" id="formulario-evento" enctype="multipart/form-data">
             <div class="form-group full-width">
                 <label for="ctitulo">Nome do evento:</label>
                 <input type="text" name="titulo" id="ctitulo">
@@ -46,12 +46,15 @@
                     <select name="categoria" id="scategoria">
                         <option value="Festival">Festival</option>
                         <option value="Comemoracao">Comemoração</option>
-                        <option value="Beneficente">Beneficente</option>
+                        <option value="Musica">Música</option>
+                        <option value="Teatro">Teatro</option>
+                        <option value="Esporte_e_jogos">Esporte e Jogos</option>
+                        <option value="Cinema">Cinema</option>
                     </select>
                 </div>
 
                 <div class="form-group half-width">
-                    <label for="cduracao">Duração:</label>
+                    <label for="cduracao">Duração(min):</label>
                     <input type="text" name="duracao" id="cduracao">
                 </div>
             </div>
@@ -60,17 +63,24 @@
                 <div class="form-group half-width">
                     <label for="setaria">Faixa Etária</label>
                     <select name="etaria" id="setaria">
-                        <option value="Livre">Livre</option>
-                        <option value="12+">12+</option>
-                        <option value="16+">16+</option>
-                        <option value="18+">18+</option>
+                        <option value="L">Livre</option>
+                        <option value="A12">A12</option>
+                        <option value="A16">A16</option>
+                        <option value="A18">A18</option>
                     </select>
                 </div>
 
                 <div class="form-group half-width">
                     <label for="cmunicipio">Município:</label>
+                   
                     <select name="municipio" id="cmunicipio">
-                        <!-- Adicione as opções aqui -->
+                        <option value="">Selecione..</option>
+                        <option value="Araçatuba">Araçatuba</option>
+                        <option value="Araraquara">Araraquara</option>
+                        <option value="Birigui">Birigui</option>
+                        <option value="Buritama">Buritama</option>
+                        <option value="Clementina">Clementina</option>
+                        <option value="Penápolis">Penápolis</option>
                     </select>
                 </div>
             </div>
